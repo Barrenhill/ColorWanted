@@ -1,0 +1,16 @@
+C:\Users\qq241\source\repos\ColorWanted\obj\Debug\net6.0-windows\ColorWanted.csproj.GenerateResource.cache
+C:\Users\qq241\source\repos\ColorWanted\obj\Debug\net6.0-windows\ColorWanted.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\qq241\source\repos\ColorWanted\obj\Debug\net6.0-windows\ColorWanted.AssemblyInfoInputs.cache
+C:\Users\qq241\source\repos\ColorWanted\obj\Debug\net6.0-windows\ColorWanted.AssemblyInfo.cs
+C:\Users\qq241\source\repos\ColorWanted\obj\Debug\net6.0-windows\ColorWanted.csproj.CoreCompileInputs.cache
+C:\Users\qq241\source\repos\ColorWanted\obj\Debug\net6.0-windows\ColorWanted.ColorWanted.resources
+C:\Users\qq241\source\repos\ColorWanted\bin\Debug\net6.0-windows\ColorWanted.exe
+C:\Users\qq241\source\repos\ColorWanted\bin\Debug\net6.0-windows\ColorWanted.deps.json
+C:\Users\qq241\source\repos\ColorWanted\bin\Debug\net6.0-windows\ColorWanted.runtimeconfig.json
+C:\Users\qq241\source\repos\ColorWanted\bin\Debug\net6.0-windows\ColorWanted.dll
+C:\Users\qq241\source\repos\ColorWanted\bin\Debug\net6.0-windows\ColorWanted.pdb
+C:\Users\qq241\source\repos\ColorWanted\obj\Debug\net6.0-windows\ColorWanted.dll
+C:\Users\qq241\source\repos\ColorWanted\obj\Debug\net6.0-windows\refint\ColorWanted.dll
+C:\Users\qq241\source\repos\ColorWanted\obj\Debug\net6.0-windows\ColorWanted.pdb
+C:\Users\qq241\source\repos\ColorWanted\obj\Debug\net6.0-windows\ColorWanted.genruntimeconfig.cache
+C:\Users\qq241\source\repos\ColorWanted\obj\Debug\net6.0-windows\ref\ColorWanted.dll
