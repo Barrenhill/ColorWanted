@@ -13,9 +13,14 @@
         <frameworkReference name="Microsoft.WindowsDesktop.App.WindowsForms" />
       </group>
     </frameworkReferences>
+    <contentFiles>
+      <files include="any/net6.0-windows7.0/ICO/ColorWanted.ico" buildAction="Content" />
+    </contentFiles>
   </metadata>
   <files>
     <file src="C:\Users\qq241\source\repos\ColorWanted\bin\Debug\net6.0-windows\ColorWanted.runtimeconfig.json" target="lib\net6.0-windows7.0\ColorWanted.runtimeconfig.json" />
     <file src="C:\Users\qq241\source\repos\ColorWanted\bin\Debug\net6.0-windows\ColorWanted.dll" target="lib\net6.0-windows7.0\ColorWanted.dll" />
+    <file src="C:\Users\qq241\source\repos\ColorWanted\ICO\ColorWanted.ico" target="content\ICO\ColorWanted.ico" />
+    <file src="C:\Users\qq241\source\repos\ColorWanted\ICO\ColorWanted.ico" target="contentFiles\any\net6.0-windows7.0\ICO\ColorWanted.ico" />
   </files>
 </package>

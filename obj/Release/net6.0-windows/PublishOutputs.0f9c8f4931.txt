@@ -1,0 +1,5 @@
+H:\Liuchuanyi\Desktop\ColorWanted\ColorWanted.exe
+H:\Liuchuanyi\Desktop\ColorWanted\ColorWanted.dll
+H:\Liuchuanyi\Desktop\ColorWanted\ColorWanted.deps.json
+H:\Liuchuanyi\Desktop\ColorWanted\ColorWanted.runtimeconfig.json
+H:\Liuchuanyi\Desktop\ColorWanted\ColorWanted.pdb
