@@ -127,7 +127,7 @@ namespace ColorWanted
             panel2.Location = new Point(7, 10);
             panel2.Margin = new Padding(4);
             panel2.Name = "panel2";
-            panel2.Size = new Size(324, 146);
+            panel2.Size = new Size(310, 146);
             panel2.TabIndex = 7;
             // 
             // txtColor
@@ -156,7 +156,7 @@ namespace ColorWanted
             panel3.Location = new Point(7, 166);
             panel3.Margin = new Padding(4);
             panel3.Name = "panel3";
-            panel3.Size = new Size(324, 46);
+            panel3.Size = new Size(310, 46);
             panel3.TabIndex = 10;
             // 
             // label6
@@ -184,7 +184,7 @@ namespace ColorWanted
             AutoScaleDimensions = new SizeF(7F, 17F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.WhiteSmoke;
-            ClientSize = new Size(336, 219);
+            ClientSize = new Size(324, 219);
             Controls.Add(panel3);
             Controls.Add(panel2);
             FormBorderStyle = FormBorderStyle.FixedSingle;
