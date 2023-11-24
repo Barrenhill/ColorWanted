@@ -1,4 +1,5 @@
 ﻿using System.ComponentModel;
+using Timer = System.Windows.Forms.Timer;
 
 namespace ColorWanted
 {
@@ -34,7 +35,7 @@ namespace ColorWanted
             ComponentResourceManager resources = new ComponentResourceManager(typeof(ColorWanted));
             checkBox1 = new CheckBox();
             txtPoint = new TextBox();
-            timer1 = new System.Windows.Forms.Timer(components);
+            timer1 = new Timer(components);
             txtRGB = new TextBox();
             panel1 = new Panel();
             label1 = new Label();
@@ -45,8 +46,12 @@ namespace ColorWanted
             panel3 = new Panel();
             label6 = new Label();
             label5 = new Label();
+            notifyIcon1 = new NotifyIcon(components);
+            NicontextMenu = new ContextMenuStrip(components);
+            toolStripMenuItem_Exit = new ToolStripMenuItem();
             panel2.SuspendLayout();
             panel3.SuspendLayout();
+            NicontextMenu.SuspendLayout();
             SuspendLayout();
             // 
             // checkBox1
@@ -179,6 +184,29 @@ namespace ColorWanted
             label5.TabIndex = 0;
             label5.Text = "复制颜色值：";
             // 
+            // notifyIcon1
+            // 
+            notifyIcon1.BalloonTipText = "颜色拾取器";
+            notifyIcon1.ContextMenuStrip = NicontextMenu;
+            notifyIcon1.Icon = (Icon)resources.GetObject("notifyIcon1.Icon");
+            notifyIcon1.Text = "颜色拾取器";
+            notifyIcon1.Visible = true;
+            notifyIcon1.MouseClick += notifyIcon1_Click;
+            notifyIcon1.MouseDoubleClick += notifyIcon1_MouseDoubleClick;
+            // 
+            // NicontextMenu
+            // 
+            NicontextMenu.Items.AddRange(new ToolStripItem[] { toolStripMenuItem_Exit });
+            NicontextMenu.Name = "NicontextMenu";
+            NicontextMenu.Size = new Size(101, 26);
+            // 
+            // toolStripMenuItem_Exit
+            // 
+            toolStripMenuItem_Exit.Name = "toolStripMenuItem_Exit";
+            toolStripMenuItem_Exit.Size = new Size(100, 22);
+            toolStripMenuItem_Exit.Text = "退出";
+            toolStripMenuItem_Exit.Click += Application_Exit_Click;
+            // 
             // ColorWanted
             // 
             AutoScaleDimensions = new SizeF(7F, 17F);
@@ -191,16 +219,18 @@ namespace ColorWanted
             Icon = (Icon)resources.GetObject("$this.Icon");
             Margin = new Padding(4);
             MaximizeBox = false;
+            MdiChildrenMinimizedAnchorBottom = false;
             Name = "ColorWanted";
             StartPosition = FormStartPosition.CenterParent;
             Text = "颜色拾取器";
-            FormClosed += FrmGetColor_FormClosed;
             Load += FrmGetColor_Load;
+            SizeChanged += Form1_SizeChanged;
             Leave += FrmGetColor_Leave;
             panel2.ResumeLayout(false);
             panel2.PerformLayout();
             panel3.ResumeLayout(false);
             panel3.PerformLayout();
+            NicontextMenu.ResumeLayout(false);
             ResumeLayout(false);
         }
 
@@ -208,7 +238,7 @@ namespace ColorWanted
 
         private CheckBox checkBox1;
         private TextBox txtPoint;
-        private System.Windows.Forms.Timer timer1;
+        private Timer timer1;
         private TextBox txtRGB;
         private Panel panel1;
         private Panel panel2;
@@ -219,5 +249,8 @@ namespace ColorWanted
         private Label label5;
         private Label label6;
         private Panel panel3;
+        private NotifyIcon notifyIcon1;
+        private ContextMenuStrip NicontextMenu;
+        private ToolStripMenuItem toolStripMenuItem_Exit;
     }
 }

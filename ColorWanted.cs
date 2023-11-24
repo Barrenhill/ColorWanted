@@ -105,8 +105,9 @@ namespace ColorWanted
             RegisterHotKey(Handle, 81, KeyModifiers.Ctrl, Keys.F);
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void Application_Exit_Click(object sender, EventArgs e)
         {
+            UnregisterHotKey(Handle, 81);
             Application.Exit();
         }
 
@@ -133,11 +134,42 @@ namespace ColorWanted
         private void FrmGetColor_Leave(object sender, EventArgs e)
         {
         }
-
+        private void Form1_SizeChanged(object sender, EventArgs e)
+        {
+            if (WindowState == FormWindowState.Minimized)
+            {
+                Hide();
+                notifyIcon1.Visible = true;
+            }
+        }
+        private void notifyIcon1_Click(object sender, EventArgs e)
+        {
+        }
         private void FrmGetColor_FormClosed(object sender, FormClosedEventArgs e)
         {
             //注销Id号为81的热键设定    
             UnregisterHotKey(Handle, 81);
+        }
+
+        private void notifyIcon1_MouseDoubleClick(object sender, MouseEventArgs e)
+        {
+
+        }
+
+        private void notifyIcon1_Click(object sender, MouseEventArgs e)
+        {
+
+            if (WindowState.Equals(FormWindowState.Normal))
+            {
+                Hide();
+                notifyIcon1.Visible = true;
+                WindowState = FormWindowState.Minimized;
+            }
+            else
+            {
+                Visible = true;
+                WindowState = FormWindowState.Normal;
+            }
         }
     }
 }
